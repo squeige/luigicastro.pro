@@ -5,12 +5,12 @@ import Footer from './components/footer/footer.cmp';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Bio />
-      <Footer />
-    </div>
-  );
+		<div className="App">
+			<Header />
+			<Bio />
+			<Footer />
+		</div>
+	)
 }
 
 export default App;

@@ -1,0 +1,20 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin: 0 2em;
+}
+
+.top {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 2em;
+	padding-inline: 4em;
+}
+
+.bottom {
+	text-align: center;
+	margin: 1.5em 0;
+}

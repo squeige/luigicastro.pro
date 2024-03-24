@@ -5,15 +5,13 @@ import icon from '../../img/moon.svg';
 function Header() {
 	return (
 		<div className={styles.main}>
-
-			<div className={styles.left}>
-				<img src={logo} alt='logo' style={{ width: '650px', height: 'auto'}} />
+			<div className = {styles.left}>
+			<img src={logo} alt='logo' style={{ width: '650px',  height: 'auto' }} />
 			</div>
 
-			<div className={styles.right}>
-				<img src={icon} alt='moon' style={{ width : '64px', height: 'auto'}} />
+			<div className = {styles.right}>
+			<img src={icon} alt='moon' style={{ width: '38px',  height: 'auto' }} />
 			</div>
-
 		</div>
 	);
 }
