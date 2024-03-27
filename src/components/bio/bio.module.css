@@ -29,6 +29,19 @@
 	align-items: center;
 }
 
+.thumbDark{
+	background-color: white;
+	height: 150px;
+	width: 250px;
+	margin:1em auto;
+	border-radius: 20px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
 .card h1 {
 	font-size:1.65em;
 	font-weight: 600;
