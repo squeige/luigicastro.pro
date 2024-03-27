@@ -1,6 +1,9 @@
 import styles from './bio.module.css';
 import git_lgt from '../../img/git_lgt.svg';
 import linked_lgt from '../../img/linked_lgt.svg';
+import book from '../../img/book.png';
+
+import Card from './card.cmp.jsx';
 
 function Bio() {
 	return (
@@ -10,23 +13,30 @@ function Bio() {
 			</p>
 
 			<div className={styles.menu}>
-			<div className={styles.card}>
-				<a href="https://bookstack.luigicastro.pro/" target="_blank"><div className={styles.thumb}></div></a>
-					<h1>Diaries of a Geek</h1>
-					<p>Explore my writings and notes chronicling passions, endeavors, and exciting projects. Delve into the realm of creativity, innovation, and exploration.</p>
-				</div>
-			<div className={styles.card}>
-				<a href="https://github.com/squeige" target="_blank"><div className={styles.thumb}><img src={git_lgt} alt="git_lgt" style={{width: '90px', height:'auto'}}/>
-					</div></a>
-					<h1>My GIT Repo</h1>
-					<p>Welcome to my GitHub repository! 🚀 Here you'll find a collection of projects showcasing my passion for coding and problem-solving</p>
-				</div>
-			<div className={styles.card}>
-				<a href="https://www.linkedin.com/in/squeige/" target="_blank"><div className={styles.thumb}><img src={linked_lgt} alt="git_lgt" style={{width: '90px', height:'auto'}}/>
-					</div></a>
-					<h1>Resume</h1>
-					<p>Check out my resume for a comprehensive overview of my skills, experience, and achievements. Let's connect and explore how we can work together to make a positive impact! </p>
-				</div>
+				<Card 
+					link='https://bookstack.luigicastro.pro/' 
+					image={book} 
+					title='Diaries of a Geek' 
+					description='Explore my writings and notes chronicling passions, endeavors, and exciting projects. Delve into the realm of creativity, innovation, and exploration.' 
+					width= '100%'
+					height= '100%'
+				/> 
+				<Card 
+					link='https://github.com/squeige'  
+					image={git_lgt} 
+					title='My Git' 
+					description="Welcome to my GitHub repository! 🚀 Here you'll find a collection of projects showcasing my passion for coding and problem-solving"
+					width='92px'
+					height='auto'
+				/>
+				<Card 
+					link='https://www.linkedin.com/in/squeige/'  
+					image={linked_lgt} 
+					title='Resume' 
+					description="Check out my resume for a comprehensive overview of my skills, experience, and achievements. Let's connect and explore how we can work together to make a positive impact!"
+					width='92px'
+					height='auto'
+				/> 
 			</div>
 		</div>
 	)
