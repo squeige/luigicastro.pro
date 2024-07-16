@@ -1,0 +1,14 @@
+services:
+  nginx:
+    container_name: Nginx
+    image: squeige/luigicastro.pro:latest
+    networks:
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.home.rule=Host(`home.luigi.is-cool.dev`)"
+      - "traefik.http.routers.home.tls.certresolver=letsencrypt"
+
+networks:
+  proxy:
+    external: true

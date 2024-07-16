@@ -16,7 +16,7 @@ function Bio({isDark}) {
 
 			<div className={styles.menu}>
 				<Card 
-					link='https://bookstack.luigicastro.pro/' 
+					link='https://home.luigi.is-cool.dev/bookstack'
 					image={book} 
 					title='Diaries of a Geek' 
 					description='Explore my writings and notes chronicling passions, endeavors, and exciting projects. Delve into the realm of creativity, innovation, and exploration.' 
